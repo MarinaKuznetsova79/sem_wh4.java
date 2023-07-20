@@ -1,0 +1,37 @@
+ System.out.print("Условие задачи:\n");
+                    System.out.print("В калькулятор (урок 1 и 2) добавьте возможность отменить последнюю операцию. ");
+                    System.out.println("\n");
+                    System.out.print("Введите число 1: ");
+                    double num5 = Double.parseDouble(scanner.nextLine());
+                    System.out.print("Введите число 2: ");
+                    double num6 = Double.parseDouble(scanner.nextLine());
+                    double res2 = 0;
+                    Exemple8(num5,num6,res2);
+                    System.out.print("Для отмены операции нажмите: 1 \nДля продолжения: 2 ");
+                    Scanner v = new Scanner(System.in);
+                    int vib = v.nextInt();
+                    while(true){
+                        if(vib == 1){
+                            Exemple8(num5, num6, res2);
+                            break;
+                        }
+                        if(vib == 2){
+                            break; 
+                        }
+                        //break;
+                    }
+                    //break;
+
+                case 0:
+                    System.out.println("Завершение работы. \nСпасибо за использование приложения. \nДо встречи!!!");
+                    f = false;
+                    break;
+
+                default:
+                    System.out.println("Вы указали некорректный номер задачи.\nПовторите попытку ввода.");
+                break;
+
+            }
+        }
+
+    }
